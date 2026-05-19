@@ -1,0 +1,27 @@
+# MCPize Configuration
+# Docs: https://mcpize.com/docs/mcpize-yaml
+
+version: 1
+
+name: "GoHighLevel Agency Ops"
+slug: "gohighlevel-agency-ops"
+
+runtime: typescript
+entry: "src/index.ts"
+
+build:
+  install: "npm install"
+  command: "npm run build"
+
+start:
+  type: stdio
+  command: "node"
+  args:
+    - "dist/index.js"
+
+bridge:
+  mode: stdio
+
+credentials:
+  - name: "GHL_AGENCY_TOKEN"
+  - name: "GHL_COMPANY_ID"
