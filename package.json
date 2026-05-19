@@ -1,0 +1,32 @@
+// ── package.json ──────────────────────────────────────────────────────────────
+{
+  "name": "ghl-agency-ops-mcp",
+  "version": "1.0.0",
+  "description": "The only GoHighLevel MCP built for agencies — multi-location switching, dry-run writes, snapshot deployment, cross-location reporting.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ghl-agency-ops-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build":   "tsc",
+    "dev":     "tsx watch src/index.ts",
+    "start":   "node dist/index.js",
+    "inspect": "npx -y @modelcontextprotocol/inspector tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx":        "^4.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "mcp", "mcp-server", "gohighlevel", "highlevel",
+    "agency", "crm", "saas-mode", "white-label",
+    "snapshots", "multi-location", "dry-run"
+  ],
+  "license": "MIT"
+}
