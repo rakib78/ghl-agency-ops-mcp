@@ -5,6 +5,16 @@
 [![MCPize](https://img.shields.io/badge/MCPize-Listed-blue)](https://mcpize.com/mcp/ghl-agency-ops-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+## Connect via MCPize
+
+Use this MCP server instantly with no local installation:
+
+```bash
+npx -y mcpize connect @rkbzddev/gohighlevel-agency-ops --client claude
+```
+
+Or connect at: **https://mcpize.com/mcp/gohighlevel-agency-ops**
+
 ---
 
 ## Why this exists
